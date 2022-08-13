@@ -1,0 +1,19 @@
+/.idea/
+/.expo/
+/.expo-shared/
+/.vscode/
+/dist/
+/node_modules/
+/web-build/
+
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# macOS
+._*
+.DS_Store
