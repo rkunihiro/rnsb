@@ -1,5 +1,7 @@
 {
-    "extends": "expo/tsconfig.base",
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Expo",
+
     "compilerOptions": {
         "target": "es2021",
         "lib": ["dom", "es2021"],
@@ -10,7 +12,8 @@
         "resolveJsonModule": true,
         "noEmit": true,
         "skipLibCheck": true,
-
+        "baseUrl": "./src",
+        "paths": {},
         "strict": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
