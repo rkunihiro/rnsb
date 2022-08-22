@@ -34,3 +34,12 @@ npm install --save-dev @testing-library/react-native --force
 npm install --save-dev eslint eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-react prettier
 npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript
 ```
+
+## Libs
+
+- [React Navigation](https://reactnavigation.org/)
+- [React Native Paper](https://reactnativepaper.com/)
+
+## Debug
+
+- [Flipper](https://fbflipper.com/)
