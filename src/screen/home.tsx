@@ -1,7 +1,17 @@
 import * as Application from "expo-application";
+import { useEffect } from "react";
 import { Text, View } from "react-native";
 
-export function Home() {
+export function HomeScreen() {
+    useEffect(() => {
+        console.log(`HomeScreen#mount`);
+
+        return () => {
+            console.log(`HomeScreen#unmount`);
+        };
+    }, []);
+
+    console.log(`HomeScreen#render`);
     return (
         <View>
             <Text>Hello,World!</Text>

@@ -3,4 +3,5 @@ export type ParamList = {
     Battery: undefined;
     Camera: undefined;
     Cellular: undefined;
+    Device: undefined;
 };

@@ -9,7 +9,7 @@ const batteryStateLabel: Record<BatteryState, string> = {
     [BatteryState.FULL]: "FULL",
 };
 
-export function Battery() {
+export function BatteryScreen() {
     const [powerState, setPowerState] = useState<PowerState | null>(null);
 
     const update = async () => {

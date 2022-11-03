@@ -1,8 +1,18 @@
 import { Camera } from "expo-camera";
+import { useEffect } from "react";
 import { Button, Text, View } from "react-native";
 
 export function CameraScreen() {
     const [permission, requestPermission] = Camera.useCameraPermissions();
+
+    useEffect(() => {
+        console.log(`CameraScreen#mount`);
+
+        return () => {
+            console.log(`CameraScreen#unmount`);
+        };
+    }, []);
+    console.log(`CameraScreen#render`);
 
     if (!permission?.granted) {
         return (

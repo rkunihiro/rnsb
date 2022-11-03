@@ -27,6 +27,7 @@
         "expo-battery": "^6.3.0",
         "expo-camera": "^12.3.0",
         "expo-cellular": "^4.3.0",
+        "expo-device": "^4.3.0",
         "expo-random": "^12.3.0",
         "expo-sensors": "~11.4.0",
         "expo-status-bar": "^1.4.0",

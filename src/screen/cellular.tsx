@@ -26,26 +26,42 @@ export function CellularScreen() {
 
     const update = () => {
         getCarrierNameAsync().then((value) => {
+            console.log(`getCarrierNameAsync return ${value}`);
             setCarrierName(value);
         });
+
         getCellularGenerationAsync().then((value) => {
+            console.log(`getCellularGenerationAsync return ${value}`);
             setCellularGeneration(value);
         });
+
         getIsoCountryCodeAsync().then((value) => {
+            console.log(`getIsoCountryCodeAsync return ${value}`);
             setIsoCountryCode(value);
         });
+
         getMobileCountryCodeAsync().then((value) => {
+            console.log(`getMobileCountryCodeAsync return ${value}`);
             setMobileCountryCode(value);
         });
+
         getMobileNetworkCodeAsync().then((value) => {
+            console.log(`getMobileNetworkCodeAsync return ${value}`);
             setMobileNetworkCode(value);
         });
     };
 
     useEffect(() => {
+        console.log(`CellularScreen#mount`);
+
         update();
+
+        return () => {
+            console.log(`CellularScreen#unmount`);
+        };
     }, []);
 
+    console.log(`CellularScreen#render`);
     return (
         <View>
             <Text>carrierName: {carrierName ?? "-"}</Text>
