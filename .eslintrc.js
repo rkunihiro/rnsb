@@ -47,6 +47,7 @@ module.exports = {
         "func-style": ["warn", "declaration", { allowArrowFunctions: true }],
         "max-statements": ["warn", 40, { ignoreTopLevelFunctions: true }],
         "one-var": ["warn", "never"],
+        "no-restricted-syntax": ["warn", "TSEnumDeclaration"],
 
         // eslint disable from "all" presets
         "id-length": "off",
@@ -65,6 +66,8 @@ module.exports = {
         "@typescript-eslint/prefer-readonly-parameter-types": "off",
         "@typescript-eslint/require-await": "off",
         "@typescript-eslint/strict-boolean-expressions": "off",
+
+        "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
 
         // import
         "import/first": "error",

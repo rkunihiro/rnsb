@@ -13,7 +13,9 @@
         "noEmit": true,
         "skipLibCheck": true,
         "baseUrl": "./src",
-        "paths": {},
+        "paths": {
+            "~/screen/*": ["./screen/*"]
+        },
         "strict": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
